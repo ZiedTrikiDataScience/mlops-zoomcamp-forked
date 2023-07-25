@@ -1,0 +1,23 @@
+1* Starting a prefect server :
+
+-->  	prefect server start 
+--> open a new terminal and activate env again
+--> paste this :  prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
+--> run python scripts 
+
+2* Starting a prefect project :
+
+	prefect project init
+
+--> 4 files (prefect.yaml,  deployment.yaml, .prefectignore , one hidden)
+
+3* Deployment of workflow (Send it to Work Pool already created) (can be scheduled with cron): 
+
+	prefect deploy ./orchestrate.py:main_flow -p Work_Pool_MLOps
+
+4* Worker Polls the Workpool and executes the workflow submitted : 
+
+	prefect worker start -p Work_Pool_MLOps
+
+
+	
