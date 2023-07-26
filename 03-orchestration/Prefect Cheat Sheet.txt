@@ -7,17 +7,34 @@
 
 2* Starting a prefect project :
 
-	prefect project init
+	prefect project init     OR  prefect init
 
 --> 4 files (prefect.yaml,  deployment.yaml, .prefectignore , one hidden)
 
-3* Deployment of workflow (Send it to Work Pool already created) (can be scheduled with cron): 
+3* Configuration of the Deployment of workflow (Send it to Work Pool already created) (can be scheduled with cron): 
 
 	prefect deploy ./orchestrate.py:main_flow -p Work_Pool_MLOps
 
-4* Worker Polls the Workpool and executes the workflow submitted : 
+4 * To actually Deploy the deployment and schedule it :
+ 
+	prefect deploy -n Deployment_Homework_MLOps_Zied
 
-	prefect worker start -p Work_Pool_MLOps
+
+5* To execute runs from the workflow deployed : The Worker Polls the Workpool and executes the workflow submitted : 
+
+	prefect worker start --pool Work_Pool_MLOps
+
+6* To make changes in the deployments , change the prefect.yaml! and run again:
+
+	prefect deploy -n Deployment_Homework_MLOps_Zied
+	
+
+	
+	
+	
+	
+	
+
 
 
 	
