@@ -1,0 +1,23 @@
+* To create an environment :
+	pip --python path_to_python
+
+	# It will be created in : C:\Users\Ikram\.virtualenvs
+
+
+* To activate it :
+	pipenv shell --venv /path/to/virtual_environment
+
+	OR :
+
+	pipenv shell (after going to the path where the pipfile is located)  
+
+
+* To install packages inside of it:
+	pipenv install pandas numpy ...
+	pip install pandas numpy ...
+
+
+	
+
+**** To install an already created environment :
+	pipenv install

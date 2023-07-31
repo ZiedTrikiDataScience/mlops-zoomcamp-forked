@@ -1,0 +1,7 @@
+scikit-learn 
+flask
+flask-cors
+gunicorn 
+requests 
+waitress
+git

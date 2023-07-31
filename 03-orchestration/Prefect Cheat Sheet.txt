@@ -29,6 +29,11 @@
 	prefect deploy -n Deployment_Homework_MLOps_Zied
 	
 
+7 * To enable emails' notifications :
+
+	pip install prefect-email
+
+	prefect block register -m prefect_email
 	
 	
 	

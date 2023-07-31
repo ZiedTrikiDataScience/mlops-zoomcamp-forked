@@ -1,8 +1,12 @@
 ## Deploying a model as a web-service
 
 * Creating a virtual environment with Pipenv
-* Creating a script for predictiong 
+
+
+* Creating a script for prediction
+
 * Putting the script into a Flask app
+
 * Packaging the app to Docker
 
 

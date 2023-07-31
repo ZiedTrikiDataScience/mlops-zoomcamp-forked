@@ -1,0 +1,9 @@
+* For deploying Flask in production environment : 
+
+--> We should use gunicorn (only in linux works):
+	gunicorn --bind 0.0.0.0:9696 MLOps_Flask_app_Zied:app
+
+
+---> For Windows : Install waitress (gunicorn doesn't run on windows) : 
+	
+	waitress-serve --listen=127.0.0.1:9696 MLOps_Flask_app_Zied:app

@@ -18,5 +18,6 @@ __pycache__/
 **.terraform.lock*
 **terraform.tfstate*
 
+Zied_MLOps/
 
 .DS_Store

@@ -21,6 +21,9 @@ def predict(features):
 
 app = Flask('duration-prediction')
 
+#@app.route('/', methods = ['GET'])
+#def hello():
+#    return "Hello Zied MLOps Docker"
 
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():

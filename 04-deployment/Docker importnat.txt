@@ -1,0 +1,58 @@
+Docker :
+
+* To create and run a container from a docker image:
+
+	docker run -p port_host:port_container image_name
+    	
+	docker run -p port 80:80 ngnix
+
+	docker run -it python:3.9             (-it allows to interact with the container)
+
+	docker run --name <container_name> <image_name>
+	
+	docker run --name Zied_MlOps_Container -it python:3.9-slim 
+
+* To list all the containers that are running on the same machine:
+
+	docker ps
+
+* To stop a running container :
+
+	docker stop container_id
+
+
+* To remove a stopped container:
+ 
+	docker rm container_id
+
+
+* To list all images on the host machine in order to see the available local images before we run them to create a container:
+
+	docker images
+
+
+* To remove an image:
+
+	docker rmi image_id
+
+* To build an image from a Dockerfile :
+
+	docker build -t my_image .
+
+	--> The -t flag specifies the name of the image
+	-->  The . at the end specifies the build context, which is the current directory.
+
+
+* To pull an image from a registry : Github/DockerHub :
+
+	docker pull image_name
+
+* To push an image to a registry : Github/DockerHub :
+
+	docker push image_name
+
+
+
+
+
+
