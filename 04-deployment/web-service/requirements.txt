@@ -1,7 +1,5 @@
 scikit-learn 
 flask
-flask-cors
-gunicorn 
+flask-cors 
 requests 
 waitress
-git

@@ -1,16 +1,15 @@
 FROM python:3.9.7-slim
 
-RUN pip install -U pip
-RUN pip install pipenv 
+RUN pip install --upgrade pip 
 
 WORKDIR /app
 
-COPY [ "Pipfile", "Pipfile.lock", "./" ]
+COPY [ "requirements.txt", "./" ]
 
-RUN pipenv install --system --deploy
+RUN  pip install --no-cache-dir -r requirements.txt
 
 COPY [ "predict.py", "lin_reg.bin", "./" ]
 
 EXPOSE 9696
 
-ENTRYPOINT [ "gunicorn", "--bind=0.0.0.0:9696", "predict:app" ]
+ENTRYPOINT ["waitress-serve", "--listen=0.0.0.0:9696" ,"predict:app"]

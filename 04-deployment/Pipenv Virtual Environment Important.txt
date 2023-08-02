@@ -5,7 +5,7 @@
 
 
 * To activate it :
-	pipenv shell --venv /path/to/virtual_environment
+	pipenv shell --venv /path/to/virtual_environment"
 
 	OR :
 

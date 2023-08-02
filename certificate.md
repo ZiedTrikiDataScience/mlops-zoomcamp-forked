@@ -1,4 +1,4 @@
-## Getting your certificate
+## Getting your certificate .
 
 Congratulations on finishing the course!
 

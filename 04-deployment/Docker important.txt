@@ -1,5 +1,15 @@
 Docker :
 
+* To build an image from a Dockerfile :
+
+	docker build -t my_image .
+
+	--> The -t flag specifies the name of the image
+	-->  The . at the end specifies the build context, which is the current directory.
+
+
+
+
 * To create and run a container from a docker image:
 
 	docker run -p port_host:port_container image_name
@@ -11,6 +21,8 @@ Docker :
 	docker run --name <container_name> <image_name>
 	
 	docker run --name Zied_MlOps_Container -it python:3.9-slim 
+
+	docker run -it  --rm -p 9696:9696 zaydoun_mlops_docker_image
 
 * To list all the containers that are running on the same machine:
 
@@ -35,12 +47,6 @@ Docker :
 
 	docker rmi image_id
 
-* To build an image from a Dockerfile :
-
-	docker build -t my_image .
-
-	--> The -t flag specifies the name of the image
-	-->  The . at the end specifies the build context, which is the current directory.
 
 
 * To pull an image from a registry : Github/DockerHub :

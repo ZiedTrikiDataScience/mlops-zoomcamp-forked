@@ -2,6 +2,8 @@ import pickle
 
 from flask import Flask, request, jsonify
 
+from flask_cors import CORS
+
 with open('lin_reg.bin', 'rb') as f_in:
     (dv, model) = pickle.load(f_in)
 
@@ -20,10 +22,12 @@ def predict(features):
 
 
 app = Flask('duration-prediction')
+CORS(app=app)
 
-#@app.route('/', methods = ['GET'])
-#def hello():
-#    return "Hello Zied MLOps Docker"
+
+@app.route('/', methods =['GET'])
+def hello():
+    return "Hello Zied MLOps Docker"
 
 @app.route('/predict', methods=['POST'])
 def predict_endpoint():
