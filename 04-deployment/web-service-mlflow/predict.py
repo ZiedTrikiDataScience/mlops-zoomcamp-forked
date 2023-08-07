@@ -7,6 +7,8 @@ from flask import Flask, request, jsonify
 
 RUN_ID = os.getenv('RUN_ID')
 
+# We use the S3 bucket so that we don't remain dependent on the tracking server
+# that may go down : 
 logged_model = f's3://mlflow-models-alexey/1/{RUN_ID}/artifacts/model'
 # logged_model = f'runs:/{RUN_ID}/model'
 model = mlflow.pyfunc.load_model(logged_model)
