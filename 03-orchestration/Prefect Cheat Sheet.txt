@@ -13,12 +13,12 @@
 
 
 
-3* Sending the flow to the Work Pool already created to prepare it
-for deployment (can be scheduled with cron): 
+3* Register the flow to the deployment.yaml file in order to generate 
+the deployment name and the schedule (cron) : 
 
-	prefect deploy ./orchestrate.py:main_flow -p Work_Pool_MLOps
+	prefect deploy ./orchestrate.py:main_flow -n my_deployment -p Work_Pool_MLOps
 
-
+	----->> output = 
 
 4 * To actually Deploy the deployment and schedule it :
  

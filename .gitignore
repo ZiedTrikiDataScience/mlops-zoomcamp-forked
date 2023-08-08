@@ -19,6 +19,6 @@ __pycache__/
 **terraform.tfstate*
 
 Zied_MLOps/
-prefect_deployment/
+prefect_dep/
 
 .DS_Store
