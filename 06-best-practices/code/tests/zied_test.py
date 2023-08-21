@@ -1,5 +1,7 @@
-""" 
+import json
 import logging
+
+import boto3
 import pandas as pd
 
 # Configure the logger
@@ -19,7 +21,7 @@ df = pd.read_parquet("./data/green_tripdata_2022-01.parquet")
 logger.info("Dataframe Loaded Successefuly")
 
 
-"""
+
 
 
 def test_zied():
