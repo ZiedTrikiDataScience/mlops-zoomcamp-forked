@@ -20,8 +20,10 @@ logger.info("Dataframe Loaded Successefuly")
 
 
 """
+
+
 def test_zied():
-    """ 
+    """
     Docstring just to test
     """
-    assert -1==-1*1
+    assert -1 == -1 * 1
