@@ -37,12 +37,12 @@ def test_prepare_features():
 
     actual_features = model_service.prepare_features(ride)
 
-    expected_fetures = {
+    expected_features = {
         "PU_DO": "130_205",
         "trip_distance": 3.66,
     }
 
-    assert actual_features == expected_fetures
+    assert actual_features == expected_features
 
 
 class ModelMock:
