@@ -1,0 +1,12 @@
+-----> Git Pre-commit hooks with pre-commit library :
+
+1* Create the pre-commit-config.yaml file with all the dependencies
+
+2* Run in the same folder where the .yaml file is located : 
+    pre-commit install
+
+
+
+
+
+    

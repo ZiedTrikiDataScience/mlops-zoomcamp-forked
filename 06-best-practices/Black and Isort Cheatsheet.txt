@@ -1,7 +1,7 @@
 -----> Black :
 
 * Check the possible improvements suggested :
-    black --diff zied_test.pylint
+    black --diff zied_test.py
 
 * To apply suggestions :
     black .
@@ -10,9 +10,8 @@
 
 -----> ISort :
 * Check the possible improvements suggested :
-    isort --diff zied_test.pylint
+    isort --diff zied_test.py
 
 * To apply suggestions :
     isort .
-
 
