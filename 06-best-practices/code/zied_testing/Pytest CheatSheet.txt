@@ -1,0 +1,32 @@
+* Run a test :
+
+    pytest test_zied_mlops.pytest
+
+
+* Run a test with more verbose :
+
+    pytest test_zied_mlops -verbose
+
+
+* Run test with showing the print statements:
+
+    pytest test_zied_mlops -v -showing
+
+* Run tests that are marked :
+
+    pytest test_zied_mlops.py -m number
+
+* Run a test only for a specific function :
+
+    pytest test_zied_mlops.py::test_add_strings -v -s
+
+* Mark a test :
+    
+    @pytest.mark.number
+
+* Skip a test :
+
+    @pytest.mark.skip(reason="Cannot be tested now")
+    @pytest.mark.skipif(sys.version_info < (3, 11 , 4), reason="requires python 3.11.4 or higher")
+
+
